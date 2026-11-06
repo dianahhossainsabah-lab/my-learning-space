@@ -1,0 +1,54 @@
+
+:root{
+  --navy:#173b59; --blue:#28678a; --teal:#dff3f1; --gold:#d49a36;
+  --cream:#fffaf0; --ink:#243443; --muted:#607080; --white:#fff;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f3f7fa;color:var(--ink);line-height:1.55}
+header{background:linear-gradient(120deg,#12344f,#28678a);color:white;padding:22px 5%;display:flex;align-items:center;gap:20px}
+header img{width:92px;height:92px;object-fit:contain;border-radius:50%;background:white;padding:4px}
+.school-name{font-size:clamp(1.15rem,3vw,1.8rem);font-weight:800;letter-spacing:.3px}
+.school-sub{opacity:.9;margin-top:4px}
+nav{background:#fff;display:flex;flex-wrap:wrap;justify-content:center;gap:8px;padding:12px 4%;box-shadow:0 3px 12px #173b5915;position:sticky;top:0;z-index:5}
+nav a{color:var(--navy);text-decoration:none;font-weight:700;padding:9px 15px;border-radius:22px}
+nav a:hover,nav a.active{background:var(--navy);color:white}
+main{width:min(1100px,92%);margin:30px auto 50px}
+.hero{background:linear-gradient(135deg,#e4f3f5,#fffaf0);border:1px solid #d7e5e9;border-radius:22px;padding:34px;display:grid;grid-template-columns:1.2fr .8fr;gap:25px;align-items:center}
+.eyebrow{color:var(--blue);font-weight:800;text-transform:uppercase;letter-spacing:2px;font-size:.8rem}
+h1{font-size:clamp(2rem,5vw,3.2rem);color:var(--navy);margin:8px 0 12px}
+h2{color:var(--navy);margin-top:0}
+.hero p{color:#526675;font-size:1.05rem}
+.profile-card,.panel{background:white;border:1px solid #dce6eb;border-radius:18px;padding:24px;box-shadow:0 8px 24px #173b590b}
+.profile-card{text-align:center}
+.profile-card img{width:150px;max-width:65%;border-radius:50%;border:5px solid #e3f1f2;padding:4px}
+.profile-name{font-size:1.35rem;font-weight:800;color:var(--navy);margin:12px 0 4px}
+.info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}
+.info{background:white;border:1px solid #dce6eb;border-radius:14px;padding:17px}
+.info small{display:block;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:1px}
+.info strong{display:block;color:var(--navy);font-size:1.08rem;margin-top:5px}
+.page-title{margin-bottom:8px}
+.lead{color:var(--muted);margin-top:0;margin-bottom:24px}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.student-card{display:flex;gap:16px;align-items:center;background:#fff;border:1px solid #dce6eb;border-radius:16px;padding:20px}
+.avatar{flex:0 0 48px;height:48px;border-radius:50%;display:grid;place-items:center;background:#e1f1f2;color:var(--navy);font-weight:800;font-size:1.1rem}
+.student-card h3{margin:0;color:var(--navy)}
+.student-card p{margin:4px 0 0;color:var(--muted)}
+.table-wrap{overflow-x:auto;background:#fff;border:1px solid #dce6eb;border-radius:16px;padding:10px;box-shadow:0 8px 24px #173b590b}
+table{width:100%;border-collapse:collapse;min-width:850px;font-size:.9rem}
+th,td{border:1px solid #d5e0e5;padding:11px 9px;text-align:center;vertical-align:middle}
+thead th{background:var(--navy);color:#fff}
+tbody th{background:#eaf3f5;color:var(--navy);white-space:nowrap}
+td.break{background:#fff5df;color:#865d18;font-weight:800}
+.subject{font-weight:700;color:#234e69}
+.teacher-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.teacher-card{background:white;border:1px solid #dce6eb;border-left:5px solid var(--gold);border-radius:14px;padding:20px}
+.teacher-card h3{color:var(--navy);margin:0 0 5px}
+.teacher-card p{margin:0;color:var(--muted)}
+footer{text-align:center;color:#71818d;padding:20px 10px;border-top:1px solid #dce6eb;font-size:.9rem}
+.note{background:#fff8e9;border-left:4px solid var(--gold);padding:14px 17px;border-radius:8px;color:#6c572e;margin-top:20px}
+@media(max-width:700px){
+ header{padding:16px 4%;gap:13px}header img{width:70px;height:70px}
+ .hero{grid-template-columns:1fr;padding:24px}.profile-card{max-width:360px;margin:auto}
+ .info-grid,.cards,.teacher-grid{grid-template-columns:1fr}
+ nav{position:static}nav a{padding:8px 11px;font-size:.9rem}
+}
